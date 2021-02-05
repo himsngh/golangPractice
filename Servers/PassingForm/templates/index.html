@@ -1,0 +1,24 @@
+{{ template "header" }}
+
+<form method="POST" class="form-exmaple" enctype="multipart/form-data">
+    <div class="form-example">
+        <label>Enter your First Name: </label>
+        <input type="text" name="firstName"> 
+    </div>
+    <div class="form-example">
+        <label>Enter your Last Name: </label>
+        <input type="text" name="lastName">
+    </div>
+    <div class="form-example">
+        <label>Subscribe</label>
+        <input type="checkbox" name="subscribe">
+    </div>
+    <input type="submit" value="submit">
+</form>
+<br>
+
+<h1>First Name {{.FirstName}} </h1>
+<h1>Last Name : {{.LastName}}</h1>
+<h1>Subscribed? : {{.Subscribe}} </h1>
+
+{{ template "footer"}}
