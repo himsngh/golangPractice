@@ -9,7 +9,7 @@ import (
 
 func main() {
 	fmt.Println("Main 2")
-	file, err := os.Open("/Users/himanshsingh/Desktop/golang/names.txt")
+	file, err := os.Open("/Users/himanshsingh/Desktop/golangPractice/FileOs/names.txt")
 
 	// data := make([]byte, 100)
 
